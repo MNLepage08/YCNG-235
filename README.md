@@ -48,7 +48,7 @@
   <img width="314" alt="Capture d’écran, le 2023-09-07 à 13 15 09" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/c1251975-d7bf-430e-8a79-52442e6ddad4"><br>
   Higher TF-IDF scores indicate that a term is both frequent in a particular document (TF) and rare across the entire collection (IDF), making it a potentially important and distinctive term for that document.
 
-  * [Transformer Architecture:](https://arxiv.org/abs/1706.03762) has had a profound influence on the field of natural language processing (NLP) and various sequence-to-sequence tasks. It serves as the fundamental building block for numerous cutting-edge NLP models such as BERT, GPT, and more.<br>
+* [Transformer Architecture:](https://arxiv.org/abs/1706.03762) has had a profound influence on the field of natural language processing (NLP) and various sequence-to-sequence tasks. It serves as the fundamental building block for numerous cutting-edge NLP models such as BERT, GPT, and more.<br>
 
   **Self-Attention Mechanism:** The core innovation of the Transformer is the self-attention mechanism. It allows the model to weigh the importance of different words in a sentence when encoding or decoding it. This enables the model to consider the context of each word in relation to all other words, regardless of their position in the sequence.<br>
 
