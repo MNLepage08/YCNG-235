@@ -18,6 +18,16 @@
 
 ## :pencil2: Notes
 
+<details close>
+<summary>Introduction to recommender systems. Popularity-based recommender systems.<p></summary>
+
+* **Recommendation systems:** Algorithms designed to suggest relevant items (articles, clothes, songs, videos, etc.) to users based on many different factors. In many industries, such as e-commerce, the usage of recommendation systems can generate a huge amount of revenue.<p>
+  1. Content-based filtering
+  2. Collaborative filtering
+  3. Hybrid
+
+</details> 
+
 
 ## :books: Bibliography
 
