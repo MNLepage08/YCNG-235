@@ -47,7 +47,28 @@
   **Example:** Review: this song is great, and it is sad. Number of words: 8. Suppose that we have 3 phrases (documents). IDF: log(# documents d / 3 documents with term t)<br>
   <img width="314" alt="Capture d’écran, le 2023-09-07 à 13 15 09" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/c1251975-d7bf-430e-8a79-52442e6ddad4"><br>
   Higher TF-IDF scores indicate that a term is both frequent in a particular document (TF) and rare across the entire collection (IDF), making it a potentially important and distinctive term for that document.
-  
+
+  * [Transformer Architecture:](https://arxiv.org/abs/1706.03762) has had a profound influence on the field of natural language processing (NLP) and various sequence-to-sequence tasks. It serves as the fundamental building block for numerous cutting-edge NLP models such as BERT, GPT, and more.<br>
+
+  **Self-Attention Mechanism:** The core innovation of the Transformer is the self-attention mechanism. It allows the model to weigh the importance of different words in a sentence when encoding or decoding it. This enables the model to consider the context of each word in relation to all other words, regardless of their position in the sequence.<br>
+
+  **Multi-Head Attention:** This means they perform self-attention multiple times in parallel, each time with different learned weights. This allows the model to focus on different parts of the input sequence for different tasks.<br>
+
+  **Positional Encoding:** Since Transformers do not have a built-in understanding of word order or sentence structure like RRNs and CNNs, positional encoding is necessary to inject this sequential information into the model.
+
+  **Encoder-Decoder Architecture:** In sequence-to- sequence tasks like machine translation, the Transformer uses an encoder-decoder architecture. The encoder processes the input sequence, while the decoder generates the output sequence. Both encoder and decoder consist of stacks of layers, each containing multi-head self-attention mechanisms and feedforward neural networks.
+
+  **Masking**: In tasks like language modeling, a masking mechanism is used to ensure that the model attends only to previous positions and not future positions in the input sequence (Cheating proof masking).
+
+* **Language models:**<br>
+
+  [Sentence Transformers:](https://github.com/UKPLab/sentence-transformers) Collection of several state-of- the-art pre-trained NLP models. They are fine-tuned for various
+use-cases including semantic search, clustering, translated sentence mining, etc.<br>
+
+  [Universal Sentence Encoder:](https://tfhub.dev) One of Google models for sentence encoding. It summarizes any given sentence to 512-dimensional sentence embedding resulting in a generic sentence embedding that transfers universally to wide variety of NLP tasks. Encoding architectures: Deep Average Network(DAN), Transformer Encoder. [Paper](https://arxiv.org/abs/1803.11175)<br>
+
+  **Cosine Similarity:** <br>
+  <img width="297" alt="Capture d’écran, le 2023-09-07 à 14 18 48" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/ef54155c-1b9e-4d21-adc3-776db3aca378">
 
 </details> 
 
