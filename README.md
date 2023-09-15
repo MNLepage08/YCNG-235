@@ -72,7 +72,7 @@
   [GitHub](https://github.com/UKPLab/sentence-transformers), 
   [Pre-trained Models](https://www.sbert.net/docs/pretrained_models.html)
 
-  [Universal Sentence Encoder:](https://tfhub.dev) One of Google models for sentence encoding. It summarizes any given sentence to 512-dimensional sentence embedding resulting in a generic sentence embedding that transfers universally to wide variety of NLP tasks. Encoding architectures: Deep Average Network(DAN), Transformer Encoder. [Paper](https://arxiv.org/abs/1803.11175)<br>
+* [Universal Sentence Encoder:](https://tfhub.dev) One of Google models for sentence encoding. It summarizes any given sentence to 512-dimensional sentence embedding resulting in a generic sentence embedding that transfers universally to wide variety of NLP tasks. Encoding architectures: Deep Average Network(DAN), Transformer Encoder. [Paper](https://arxiv.org/abs/1803.11175)<br>
 
   **Cosine Similarity:** <br>
   <img width="297" alt="Capture d’écran, le 2023-09-07 à 14 18 48" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/ef54155c-1b9e-4d21-adc3-776db3aca378">
