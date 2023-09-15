@@ -10,7 +10,7 @@
 | 4 | Matrix factorization in collaborative-filtering - Part 1 |
 | 5 | Matrix factorization in collaborative-filtering - Part 2 |
 | 6 | Deep learning for collaborative-filtering. |
-| 7 | Visual similarity-based recommendation system; Contrastive Language-Image Pretraining (CLIP) for recom- mendation systems. |
+| 7 | Visual similarity-based recommendation system; Contrastive Language-Image Pretraining (CLIP) for recommendation systems. |
 | 8 | Serverless recommendation engine on AWS. |
 | 9 | Deploying a recommendation model using Docker and Streamlit. |
 | 10 | Review lectures and projects presentation. |
@@ -19,7 +19,7 @@
 ## :pencil2: Notes
 
 <details close>
-<summary>Introduction to recommender systems. Popularity-based recommender systems.<p></summary>
+<summary>1. Introduction to recommender systems. Popularity-based recommender systems.<p></summary>
 
 * **Recommendation systems:** Algorithms designed to suggest relevant items (articles, clothes, songs, videos, etc.) to users based on many different factors. In many industries, such as e-commerce, the usage of recommendation systems can generate a huge amount of revenue.<p>
   **1. Content-based filtering:** It is mainly based on the principle of similar contents. It creates a profile for a user or an item to characterize its nature. Content: Text, Image. Movie recommendation:
@@ -34,6 +34,14 @@
   **3. Hybrid**<br><img width="554" alt="Capture d’écran, le 2023-09-07 à 11 21 37" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/cdfba381-4dd0-45f0-8a36-4c2d0e84bac5">
 
 * **Popularity-based:** If a product is usually purchased or a video is frequently viewed by Canadian-based users, it can be suggested to any new user from Canada. It is a generic recommendation algorithm. It can be used to address user cold-start problem in collaborative filtering. [Last.fm dataset](https://www.kaggle.com/datasets/neferfufi/lastfm)
+
+</details> 
+
+
+<details close>
+<summary>2. Content-based filtering: How to leverage the state-of-the-arts NLP models to build recommender systems?<p></summary>
+
+* **Content-Based Filtering:** It is mainly based on the principle of similar contents. It creates a profile for a user or an item to characterize its nature. 
 
 * **Main steps of Content-Based Filtering:**
   1. Feature extraction: convert text/image into numerical vectors.
@@ -60,10 +68,9 @@
 
   **Masking**: In tasks like language modeling, a masking mechanism is used to ensure that the model attends only to previous positions and not future positions in the input sequence (Cheating proof masking).
 
-* **Language models:**<br>
-
-  [Sentence Transformers:](https://github.com/UKPLab/sentence-transformers) Collection of several state-of- the-art pre-trained NLP models. They are fine-tuned for various
-use-cases including semantic search, clustering, translated sentence mining, etc.<br>
+* [Sentence Transformers:](https://www.sbert.net) Collection of several state-of-the-art pre-trained NLP models. It offers an easy approach to generate dense vector representations for sentences, paragraphs, and images. These models are built upon transformer networks. They are fine-tuned for various use-cases including semantic search, clustering, translated sentence mining, etc. 
+  [GitHub](https://github.com/UKPLab/sentence-transformers), 
+  [Pre-trained Models](https://www.sbert.net/docs/pretrained_models.html)
 
   [Universal Sentence Encoder:](https://tfhub.dev) One of Google models for sentence encoding. It summarizes any given sentence to 512-dimensional sentence embedding resulting in a generic sentence embedding that transfers universally to wide variety of NLP tasks. Encoding architectures: Deep Average Network(DAN), Transformer Encoder. [Paper](https://arxiv.org/abs/1803.11175)<br>
 
