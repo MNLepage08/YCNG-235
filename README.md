@@ -101,11 +101,11 @@
     * User-oriented is not usually easy to scale given the dynamic preference of users.
 
 * **Nearest neighbors:** The main steps
-    * Step 1: Create nearest neighbors for items using a similarity measure (e.g. cosine similarity).
+    * **Step 1:** Create nearest neighbors for items using a similarity measure (e.g. cosine similarity).
        1. Compute similarity ($S_{ij}$) between item i.<br>
           <img width="458" alt="Capture d’écran, le 2023-09-22 à 11 30 04" src="https://github.com/MNLepage08/YCNG-288-DevOps/assets/113123425/c038c525-18fb-4724-b65a-9b2922b6b6c7">
        2. Identify k items (neighbors) rated by user u taht are most similar to item i by using the similarity measure. Let denote them by $S^k(i, u)$.
-    * Step 2: Compute the weighted average for each item.<br>
+    * **Step 2:** Compute the weighted average for each item.<br>
       <img width="200" alt="Capture d’écran, le 2023-09-22 à 11 39 08" src="https://github.com/MNLepage08/YCNG-288-DevOps/assets/113123425/cc7dde0c-472b-435e-967a-355db0a5edef">
 
 </details> 
