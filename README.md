@@ -5,7 +5,7 @@
 | # | Sessions | 
 | ------------- | ------------- |
 | 1 | Introduction to recommender systems. Popularity-based recommender systems.|
-| 2 | Content-based filtering: How to leverage the state-of-the-arts NLP models to build recommender systems? |
+| 2 | Content-based filtering: How to leverage the state-of-the-arts NLP models to build recommender systems?|
 | 3 | Nearest neighbor collaborative filtering: Distance-based methods for fun and profit. |
 | 4 | Matrix factorization in collaborative-filtering - Part 1 |
 | 5 | Matrix factorization in collaborative-filtering - Part 2 |
@@ -76,6 +76,37 @@
 
   **Cosine Similarity:** <br>
   <img width="297" alt="Capture d’écran, le 2023-09-07 à 14 18 48" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/ef54155c-1b9e-4d21-adc3-776db3aca378">
+
+</details> 
+
+
+<details close>
+<summary>3. Nearest neighbor collaborative filtering: Distance-based methods for fun and profit.<p></summary>
+
+<img width="300" align="right" alt="Capture d’écran, le 2023-09-22 à 10 50 34" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/d5b3a0a0-c8f7-486b-b42d-b14527e638cd">
+
+* **Collaborative Filtering:** It uses similarities between users and items to make recommendations. The information collected from other users is used to recommend new items to the current user. It works for any kind of problem. Howeverm it suffers from cold-start problem (new useres have noo historym new items have no ratings). Solve cold-start problem by if then statement with example content-based & collaborative filtering or with hybrid system.
+  
+* **Formal model:** U: set of users. I: set of items. R: set or ratings (explicit or implicit). Utility finction: U x I -> R. It is potentially a large-scale matrix where users and items are rows and columns of the matrix. It is a super sparce matrix.
+  
+* **Scoring in collaborative filtering:**
+    * Most convenient is to use high quality explicit feedback (like / dislike buttons in YouTube videos).
+    * In many cases explicit feedback is not available, which requires using implicit feedback (purchase history, browsing history, search patterns).
+    * Create a common currency of liked items (explicit / implicit feedback).
+ 
+* **Collaborative filtering variants:**
+    * Item-based: similarities between items in the training dataset is calculated.
+    * User-based: similarities between users in the training dataset is calculated.
+    * Item-based variant is prefered over user-based (more scalable, stable over time -> keep embeddings).
+    * User-oriented is not usually easy to scale given the dynamic preference of users.
+
+* **Nearest neighbors:** The main steps
+    * Step 1: Create nearest neighbors for items using a similarity measure (e.g. cosine similarity).
+       1. Compute similarity ($S_{ij}$) between item i.<br>
+          <img width="458" alt="Capture d’écran, le 2023-09-22 à 11 30 04" src="https://github.com/MNLepage08/YCNG-288-DevOps/assets/113123425/c038c525-18fb-4724-b65a-9b2922b6b6c7">
+       2. Identify k items (neighbors) rated by user u taht are most similar to item i by using the similarity measure. Let denote them by $S^k(i, u)$.
+    * Step 2: Compute the weighted average for each item.<br>
+      <img width="200" alt="Capture d’écran, le 2023-09-22 à 11 39 08" src="https://github.com/MNLepage08/YCNG-288-DevOps/assets/113123425/cc7dde0c-472b-435e-967a-355db0a5edef">
 
 </details> 
 
