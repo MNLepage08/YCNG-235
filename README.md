@@ -107,6 +107,7 @@
        2. Identify k items (neighbors) rated by user u taht are most similar to item i by using the similarity measure. Let denote them by $S^k(i, u)$.
     * **Step 2:** Compute the weighted average for each item.<br>
       <img width="200" alt="Capture d’écran, le 2023-09-22 à 11 39 08" src="https://github.com/MNLepage08/YCNG-288-DevOps/assets/113123425/cc7dde0c-472b-435e-967a-355db0a5edef">
+ 
 
 </details> 
 
@@ -124,9 +125,27 @@
   * Item-to-item recommendation: non-personalization recommendation (list of similar item).
   * Suggest relevant users to a specific item: Create retention marketing campaign and target the users that we think they would be interested into those 500 new arrivals.
  
-* [Alternating Least Square (ALS:](http://yifanhu.net/PUB/cf.pdf)
-  
+* [Alternating Least Square (ALS):](http://yifanhu.net/PUB/cf.pdf) Collaborative Filtering for Implicit Feedback Datasets. The cost function contains m by n terms, where m is the number of users and n is the number of items.<br>
+<img width="541" alt="Capture d’écran, le 2023-09-28 à 12 45 03" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/61442a30-20c7-4481-a1ec-95a9abe82eed"><p>
+  <img width="138" align="left" alt="Capture d’écran, le 2023-09-28 à 13 00 51" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/b0aabfbd-e9c3-47ee-9786-2cbf4e1fc42d">
+  In toher words, if a user u consumed item i ($r_{ui}$ > 0), then we have an indication that u likes i ($p_{ui}$ = 1). On the other hand, if u never consumed i, we believe no preference.<br>
+<img width="235" align="left" alt="Capture d’écran, le 2023-09-28 à 13 01 00" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/65ce9ebd-276b-42ac-aba3-0133867f7e0c"> c is the level of confidence under the user preference. We can use linear or logarithmic. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="423" align="right" alt="Capture d’écran, le 2023-09-28 à 13 01 08" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/bdef5f4f-c71e-429b-b839-83f244f3d3f8"><br><br><br><br>
+ ALS minimizes two loss functions alternatively:<br>
+   * It first holds user-factors fixed and runs gradient descent with item-factors;
+   * Then it hods item-factors fixed and runs gradient descent with user-factors.<br>
+Prediction (recommendation): <img width="105" alt="Capture d’écran, le 2023-09-28 à 14 49 02" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/59412344-a3e1-416b-b0d5-1e71782f9f11">
+
+* **Evaluation: MAP@k or NDCG**
+  * Precision: fraction of relevant recommended items: <br><img width="200" alt="Capture d’écran, le 2023-09-28 à 14 59 53" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/113338da-e174-406e-9303-474dd2ad2339">Precision: 60%
+  * Precision at k (P@k): fraction of relevant items in top k recommendations: P@1:0, P@2:0.5, P@3:0.33, P@4:0.5, P@5:0.6
+  * Average Precision at k (AP@k): sum of P@k for different values of k divided by the total number of relevant recommendations in top k results. (For one user)
+  * Mean Average Precision at k (MAP@k): the average P@k which average over the entire dataset. (For all users)
+
+* **Approximate ALS:** Naïve approach: ranking every single item for every single user. Speed up generating. Recommendations using approximate nearest neighbor libraries (NMSLIB, Annoy, Faiss). Risk: potential missing of relevant results. [Approximate Nearest Neighbours for Recommender Systems](https://www.benfrederickson.com/approximate-nearest-neighbours-for-recommender-systems/).
+
 </details>
+
 
 ## :books: Bibliography
 
