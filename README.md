@@ -111,6 +111,23 @@
 </details> 
 
 
+<details close>
+<summary>4. Matrix factorization in collaborative-filtering - Part 1<p></summary>
+
+* **Matrix factorization:** We can represent user-item interactions with a low dimensional latent space of features. The model predicts users preferences of unseen items. We can guess what people like, but don't know what they don't like (implicit feedback). Prediction: <img width="82" alt="image" src="https://github.com/MNLepage08/YCNG-235/assets/113123425/4495adcd-05a7-4a9d-b1ca-1c35149b8877"><br>
+  <img width="524" alt="Capture d’écran, le 2023-09-28 à 11 37 53" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/7888f1f6-2830-45fb-b158-0b83cdcaea08"><br>
+  where n = number of users, m = number of items, k = is our embedding dimension (latent features). The objective is to estimate the matrix R.<br>
+  <img width="766" alt="Capture d’écran, le 2023-09-28 à 11 46 30" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/9cbc4af9-3ea2-41f7-9235-45b62efd8191">
+
+* **Use-case:** (see in note 1)<br>
+  * Recommend most relevant items per user: personalization items for users.
+  * Item-to-item recommendation: non-personalization recommendation (list of similar item).
+  * Suggest relevant users to a specific item: Create retention marketing campaign and target the users that we think they would be interested into those 500 new arrivals.
+ 
+* [Alternating Least Square (ALS:](http://yifanhu.net/PUB/cf.pdf)
+  
+</details>
+
 ## :books: Bibliography
 
 | <img width="249" alt="Capture d’écran, le 2023-09-06 à 21 58 08" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/53368a31-8a49-4df3-a7f0-1d8b3b806cd3"> | 
