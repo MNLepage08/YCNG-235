@@ -147,6 +147,21 @@ Prediction (recommendation): <img width="105" alt="Capture d’écran, le 2023-0
 </details>
 
 
+<details close>
+<summary>5. Matrix factorization in collaborative-filtering - Part 2 <p></summary>
+
+* [Bayesian Personalized: ](https://arxiv.org/ftp/arxiv/papers/1205/1205.2618.pdf)
+   * The recommendation models typically involve predicting a personalized score for each item (user preference for that item).
+   * Then, the items are ranked according to the personalized scores
+   * This means if the recommendation model perfectly fits the training dataset, it will treat all interactions that are not present in the training data the same way.
+   * This approach may not take ranking into consideration for future recommendations.
+
+ <img width="488" alt="Capture d’écran, le 2023-10-05 à 13 19 02" src="https://github.com/MNLepage08/YCNG-288-DevOps/assets/113123425/7e9fd441-a849-482f-a8c1-11e2299f134f">
+ <img width="474" alt="Capture d’écran, le 2023-10-05 à 13 19 12" src="https://github.com/MNLepage08/YCNG-288-DevOps/assets/113123425/44bda64f-1a9f-4f8d-8ea2-a2d120fcb4d8">
+
+</details>
+
+
 ## :books: Bibliography
 
 | <img width="249" alt="Capture d’écran, le 2023-09-06 à 21 58 08" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/53368a31-8a49-4df3-a7f0-1d8b3b806cd3"> | 
