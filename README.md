@@ -1,5 +1,10 @@
 # YCNG-235: Recommender Systems
 
+
+## :rocket: Assignments
+
+* [Content-Based Filtering](https://github.com/MNLepage08/YCNG-235/blob/main/Assignment_1_MNL.ipynb): Collect imdb-movies dataset. Feature engineering: Transform ratings of movies into tier. Pre-processing: use lower case, deletion of leading & trailing whitespaces, merging of attributes (title, genre, overview, director, and tier) and deletion of stop words. Embeddings with universal-sentence-encoder-large_5. Estimate similarity with Approximate Nearest Neighbors (Annoy) and recommendation of the top 5 movies.
+
 ## :mortar_board: Courses
 
 | # | Sessions | 
