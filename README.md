@@ -4,6 +4,8 @@
 ## :rocket: Assignments
 
 1. [Content-Based Filtering](https://github.com/MNLepage08/YCNG-235/blob/main/Assignment_1_MNL.ipynb): Collect imdb-movies dataset. Feature engineering: Transform ratings of movies into tier. Pre-processing: use lower case, deletion of leading & trailing whitespaces, merging of attributes (title, genre, overview, director, and tier) and deletion of stop words. Embeddings with universal-sentence-encoder-large_5. Estimate similarity with Approximate Nearest Neighbors (Annoy) and recommendation of the top 5 movies.
+   
+2. [Collaborative Filtering](https://github.com/MNLepage08/YCNG-235/blob/main/Assignment_2_MNL_V2.ipynb): Collect MovieLens Latest datasets. Data exploration: genre, year of movies, ratings, average rating by movie. Use matrix factorisation with ALS algorithm and BM25 to reduce the weight given to popular item. Train model without first quartile of average movie: MAP@10 = 21.9%, NDCG@10 = 34.0%, AUC@10 = 58.7%. Create inference model with all dataset. Create a personalized (single user prediction) & non-personalized (item to item) recommendation systems.
 
 ## :mortar_board: Courses
 
