@@ -6,6 +6,12 @@
 1. [Content-Based Filtering](https://github.com/MNLepage08/YCNG-235/blob/main/Assignment_1_MNL.ipynb): Collect imdb-movies dataset. Feature engineering: Transform ratings of movies into tier. Pre-processing: use lower case, deletion of leading & trailing whitespaces, merging of attributes (title, genre, overview, director, and tier) and deletion of stop words. Embeddings with universal-sentence-encoder-large_5. Estimate similarity with Approximate Nearest Neighbors (Annoy) and recommendation of the top 5 movies.
    
 2. [Collaborative Filtering](https://github.com/MNLepage08/YCNG-235/blob/main/Assignment_2_MNL_V2.ipynb): Collect MovieLens Latest datasets. Data exploration: genre, year of movies, ratings, average rating by movie. Use matrix factorisation with ALS algorithm and BM25 to reduce the weight given to popular item. Train model without first quartile of average movie: MAP@10 = 21.9%, NDCG@10 = 34.0%, AUC@10 = 58.7%. Create inference model with all dataset. Create a personalized (single user prediction) & non-personalized (item to item) recommendation systems.
+   
+3. [Project Report](https://github.com/MNLepage08/Project-Report/blob/main/Final%20Report.pdf) - [Book Recommendation Systems](https://github.com/MNLepage08/YCNG-235/blob/main/RS_Project.ipynb): Build different taxonomies of recommendation systems. Collect users, ratings and books dataset from Kaggle. Cleaning: Shifted columns, missing & inconsistent values, normalize country. Data Exploration: Implicit vs. Explicit ratings, frequency distribution of average ratings and year of publication.
+
+   * **Content-Based Filtering:** Preprocessing data, feature extraction with TF-IDF, estimate the simialirt with the nearest neighbors.
+   * **Collaborative Filtering:** Tested with 2 libraires: Implicit & LightFM. Created users - items matrix factorization. Used BM25 to reduce weight given popular item. Evaluation: train 80% & test 20%. Used BPR, ALS and WRAP algoritms. Train inference model on all data.
+   * **Hybrid:** Like collaborative filtering with LightFM library, but implement a user or / and item features in the fitting process. Pre-processing: creation of an ages classification for the user features (children, teenager, adult, senior). Evaluation train / test: precision@5 - 1.19 / 0.73, AUC - 83.34 / 75.10
 
 ## :mortar_board: Courses
 
