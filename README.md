@@ -11,7 +11,7 @@
 
    * **Content-Based Filtering:** Preprocessing data, feature extraction with TF-IDF, estimate the simialirt with the nearest neighbors.
    * **Collaborative Filtering:** Tested with 2 libraires: Implicit & LightFM. Created users - items matrix factorization. Used BM25 to reduce weight given popular item. Evaluation: train 80% & test 20%. Used BPR, ALS and WRAP algoritms. Train inference model on all data.
-   * **Hybrid:** Like collaborative filtering with LightFM library, but implement a user or / and item features in the fitting process. Pre-processing: creation of an ages classification for the user features (children, teenager, adult, senior). Evaluation train / test: precision@5 - 1.19 / 0.73, AUC - 83.34 / 75.10
+   * **Hybrid:** Like collaborative filtering with LightFM library, but implement a user or / and item features in the fitting process. Pre-processing: creation of an ages classification for the user features (children, teenager, adult, senior). Evaluation(%) train / test: precision@5 - 1.19 / 0.73, AUC - 83.34 / 75.10
 
 ## :mortar_board: Courses
 
