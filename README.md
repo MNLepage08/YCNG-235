@@ -9,7 +9,7 @@
    
 3. [Project Report](https://github.com/MNLepage08/Project-Report/blob/main/Final%20Report.pdf) - [Book Recommendation Systems](https://github.com/MNLepage08/YCNG-235/blob/main/RS_Project.ipynb): Build different taxonomies of recommendation systems. Collect users, ratings and books dataset from Kaggle. Cleaning: Shifted columns, missing & inconsistent values, normalize country. Data Exploration: Implicit vs. Explicit ratings, frequency distribution of average ratings and year of publication.
 
-   * **Content-Based Filtering:** Preprocessing data, feature extraction with TF-IDF, estimate the simialirt with the nearest neighbors.
+   * **Content-Based Filtering:** Preprocessing data, feature extraction with TF-IDF, estimate the similarity with the nearest neighbors.
    * **Collaborative Filtering:** Tested with 2 libraires: Implicit & LightFM. Created users - items matrix factorization. Used BM25 to reduce weight given popular item. Evaluation: train 80% & test 20%. Used BPR, ALS and WRAP algoritms. Train inference model on all data.
    * **Hybrid:** Like collaborative filtering with LightFM library, but implement a user or / and item features in the fitting process. Pre-processing: creation of an ages classification for the user features (children, teenager, adult, senior). Evaluation(%) train / test: precision@5 - 1.19 / 0.73, AUC - 83.34 / 75.10
 
